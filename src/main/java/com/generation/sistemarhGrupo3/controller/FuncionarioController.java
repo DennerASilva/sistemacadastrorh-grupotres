@@ -24,7 +24,7 @@ import com.generation.sistemarhGrupo3.repository.FuncionarioRepository;
 import jakarta.validation.Valid;
 
 @RestController
-@RequestMapping("/Funcionários")
+@RequestMapping("/funcionarios")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class FuncionarioController {
 	
