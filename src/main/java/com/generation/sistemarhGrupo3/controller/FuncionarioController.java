@@ -43,7 +43,7 @@ public class FuncionarioController {
 				.orElse(ResponseEntity.status(HttpStatus.NOT_FOUND).build());
 	}
 	
-	@GetMapping("/{nome}")
+	@GetMapping("/nome/{nome}")
 	public ResponseEntity<List<Funcionario>> getByNome(@PathVariable String nome){
 		return ResponseEntity.ok(funcionarioRepository.findAllByNomeContainingIgnoreCase(nome));
 	}
